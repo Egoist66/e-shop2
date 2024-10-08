@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         
 
       ],
-    title: 'Sneakers-shop',
+    title: 'Sneakers shop',
     }
   },
   
