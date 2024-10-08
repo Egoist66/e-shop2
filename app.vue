@@ -1,7 +1,6 @@
 
 <template>
-  <div class="mb-5">
-    Hi
- 
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
