@@ -1,10 +1,8 @@
 <script setup lang="ts">
-
-
-  useHead({
-    titleTemplate: "%s - Home",
-    title: "Sneakers shop",
-  })
+useHead({
+  titleTemplate: "%s - Home",
+  title: "Sneakers shop",
+});
 
 
 </script>
@@ -12,6 +10,7 @@
 <template>
   <div>
     Page: Home
+
   </div>
 </template>
 
