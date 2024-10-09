@@ -6,6 +6,7 @@
     title: "Sneakers shop",
   })
 
+
 </script>
 
 <template>

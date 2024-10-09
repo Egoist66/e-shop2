@@ -11,7 +11,7 @@
         <main class="py-5" v-if="$slots.main">
            
             <div class="container">
-                <slot name="main"></slot>
+                <slot  name="main"></slot>
             </div>
         </main>
     </div>
