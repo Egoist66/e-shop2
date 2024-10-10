@@ -11,6 +11,21 @@ useHead({
   <div>
     Page: Home
 
+    <div class="show-case flex gap-4 items-center">
+      <UICard
+        img="/sneakers/sneakers-1.jpg"
+        title="Sneaker"
+        :price="1200"
+        :liked="false"
+      />
+      <UICard
+        img="/sneakers/sneakers-1.jpg"
+        title="Sneaker"
+        :price="1200"
+        :liked="false"
+      />
+   
+    </div>
   </div>
 </template>
 
