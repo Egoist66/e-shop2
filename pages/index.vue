@@ -11,7 +11,7 @@ useHead({
   <div>
     Page: Home
 
-    <div class="show-case flex gap-4 items-center">
+    <div class="show-case flex-wrap justify-between flex gap-4 items-center">
       <UICard
         img="/sneakers/sneakers-1.jpg"
         title="Sneaker"
