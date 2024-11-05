@@ -1,13 +1,20 @@
-export const useCard = ({defaultLiked}: {defaultLiked: boolean}) => {
+export const useCard = ({defaultLiked,  defaultAdded}: {defaultLiked: boolean, defaultAdded: boolean}) => {
     const isLiked = ref(defaultLiked);
+    const isAdded = ref(defaultAdded);
 
-    function toLike(e: Event) {
+    const  toLike = (e: Event) => {
         isLiked.value = !isLiked.value;
+    }
+
+    const toggleAddToCart = () =>{
+        isAdded.value = !isAdded.value
     }
 
 
     return {
         isLiked,
+        isAdded,
+        toggleAddToCart,
         toLike
     }
 }

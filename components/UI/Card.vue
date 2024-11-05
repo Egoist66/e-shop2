@@ -4,10 +4,12 @@
         img?: string,
         title?: string,
         price?: number,
+        isAdded?: boolean,
         liked?: boolean
     }>(), {
         liked: false,
         img: '',
+        isAdded: false,
         title: '',
         price: 0
     })
@@ -16,7 +18,12 @@
     //     (e: 'toLike', event: Event): void
     // }>()
 
-    const {toLike, isLiked} = useCard({defaultLiked: props.liked})
+    const {
+      toLike, 
+      toggleAddToCart,
+      isLiked,
+      isAdded
+    } = useCard({defaultLiked: props.liked, defaultAdded: props.isAdded})
 
   
 </script>
@@ -35,7 +42,7 @@
         <span class="text-slate-200">Цена:</span>
         <span class="font-bold">{{ price }} руб.</span>
       </div>
-      <img src="/plus.svg" alt="Plus" />
+      <img @click="toggleAddToCart" :src="isAdded ? '/checked.svg' : '/plus.svg'" :alt="isAdded ? 'Add' : 'Plus'" />
     </div>
   </div>
 </template>

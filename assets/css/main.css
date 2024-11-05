@@ -8,6 +8,10 @@ body {
     padding-bottom: 50px;
 }
 
+body,html {
+   @apply min-h-screen;
+}
+
 .container {
     max-width: 1490px;
     padding: 0 20px;
