@@ -1,4 +1,6 @@
+import { NuxtErrorBoundary } from '../../.nuxt/components';
 <script setup lang="ts">
+
 
     const props = withDefaults(defineProps<{
         img?: string,
@@ -42,6 +44,7 @@
         <span class="text-slate-200">Цена:</span>
         <span class="font-bold">{{ price }} руб.</span>
       </div>
+      
       <img @click="toggleAddToCart" :src="isAdded ? '/checked.svg' : '/plus.svg'" :alt="isAdded ? 'Add' : 'Plus'" />
     </div>
   </div>

@@ -1,5 +1,5 @@
-import { type } from '../../.nuxt/types/imports';
 <script setup lang="ts">
+
 
 
 const props = defineProps<{
