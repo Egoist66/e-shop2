@@ -5,6 +5,7 @@ useHead({
   titleTemplate: "%s - Home",
   title: "Sneakers shop",
 });
+
 </script>
 
 <template>
