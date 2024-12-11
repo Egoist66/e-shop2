@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="tsx">
 import { Products } from "~/data/mock-data";
 
 useHead({
@@ -6,11 +6,15 @@ useHead({
   title: "Sneakers shop",
 });
 
+const { provide } = useNuxtApp();
+provide("hello", (name: string) => `Hello ${name}`);
+
+
 </script>
 
 <template>
   <div>
-    <h1 class="text-2xl font-semibold mb-5">Все кроссовки</h1>
+
     <NuxtErrorBoundary @error="(e) => console.log(e)">
       <template #default>
         <LazyUICardListView v-if="Products.length" :data="Products">
