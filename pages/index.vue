@@ -31,6 +31,8 @@ provide("hello", (name: string) => `Hello ${name}`);
 
         <p v-else>Ничего не найдено</p>
       </template>
+
+
       <template #error="{ error }">
         <p>{{ error.message }}</p>
       </template>

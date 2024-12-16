@@ -23,5 +23,8 @@ export default defineNuxtConfig({
   vue: {
     propsDestructure: true
   },
+  experimental: {
+    inlineRouteRules: true
+  },
   modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss', '@nuxt/image']
 })
