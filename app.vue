@@ -6,10 +6,12 @@
 <template>
   <NuxtLoadingIndicator color="#42b883" :height="5" :duration="2000" />
 
-  <NuxtLayout>
+  <NuxtLayout name="default">
+    
     <template #main>
     
       <NuxtPage />
+
     </template>
   </NuxtLayout>
 </template>
