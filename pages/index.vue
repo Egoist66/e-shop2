@@ -17,15 +17,9 @@ provide("hello", (name: string) => `Hello ${name}`);
 
     <NuxtErrorBoundary @error="(e) => console.log(e)">
       <template #default>
-        <LazyUICardListView v-if="Products.length" :data="Products">
+        <LazyUICardListView  v-if="Products.length" :data="Products">
           <template #default="{ item }">
-            <LazyUICard
-              :title="item?.title"
-              :price="item?.price"
-              :is-added="item?.isAdded"
-              :img="item?.img"
-              :liked="item?.isLiked"
-            />
+            <LazyUICard v-bind="item" />
           </template>
         </LazyUICardListView>
 
