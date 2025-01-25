@@ -31,7 +31,7 @@ const { toLike, toggleAddToCart, isLiked, isAdded } = useCard({
   <div
     class="relative goods-card flex flex-col w-full border border-slate-100 rounded-xl p-8 cursor-pointer transition hover:shadow-xl hover:transform hover:-translate-y-2"
   >
-    <div @click="toLike($event)" class="absolute top-8 left-8">
+    <div @click="toLike" class="absolute top-8 left-8">
       <img :src="isLiked ? '/like-2.svg' : '/like-1.svg'" alt="Favorite" />
     </div>
     <img :src="img" class="w-full goods" alt="Sneaker" />

@@ -6,6 +6,7 @@
 <template>
   <NuxtLoadingIndicator color="#42b883" :height="5" :duration="2000" />
 
+
   <NuxtLayout name="default">
     
     <template #main>

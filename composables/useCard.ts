@@ -2,7 +2,7 @@ export const useCard = ({defaultLiked,  defaultAdded}: {defaultLiked: boolean, d
     const isLiked = ref(defaultLiked);
     const isAdded = ref(defaultAdded);
 
-    const  toLike = (e: Event) => {
+    const  toLike = () => {
         isLiked.value = !isLiked.value;
     }
 
